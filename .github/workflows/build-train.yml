@@ -297,7 +297,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Delete control artefact
-        uses: geekyeggo/delete-artifact@v2
+        uses: geekyeggo/delete-artifact@v5
         if: ${{ inputs.checking }}
         with:
           name: changes
@@ -409,7 +409,7 @@ jobs:
     steps:
 
       - name: Cleaning
-        uses: geekyeggo/delete-artifact@v2    
+        uses: geekyeggo/delete-artifact@v5    
         with:
           name: changes
           failOnError: false
